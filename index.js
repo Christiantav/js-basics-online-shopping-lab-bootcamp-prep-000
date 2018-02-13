@@ -53,7 +53,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (item in cart) {
+  if (item in cart = true) {
   for (var i = 0; i < len; i++) {
       if (cart[i].hasOwnProperty(item)) {
       conditionality = true
