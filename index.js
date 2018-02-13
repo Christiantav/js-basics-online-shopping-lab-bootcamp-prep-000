@@ -29,7 +29,9 @@ else if(cart.length === 2){
 else {
   var intro = `In your cart, you have `;
   var bigCart = [];
-  for(var i = 0, len = cart.length; )
+  for(var i = 0, len = cart.length; i < len - 1; i++) {
+    bigCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}, `)
+  }
 }
 }
 
