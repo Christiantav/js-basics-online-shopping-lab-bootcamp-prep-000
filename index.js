@@ -53,14 +53,15 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var conditionality = false
+  if (item in cart) {
   for (var i = 0; i < len; i++) {
       if (cart[i].hasOwnProperty(item)) {
       conditionality = true
       cart.splice(i, 1)
   }
 }
-if (!conditionality) {
+}
+else {
   console.log(`That item is not in your cart.`)
 }
 return cart
