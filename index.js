@@ -54,7 +54,7 @@ function total() {
 
 function removeFromCart(item) {
   var conditionality = false
-  for (var i = 0, len = cart.length; i < len; i++) {
+  for (var i = 0; i < len; i++) {
       if (cart[i].hasOwnProperty(item)) {
       conditionality = true
       cart.splice(i, 1)
