@@ -32,8 +32,8 @@ else if(cart.length >= 3) {
     for (var item in cart[i]) {
       bigCart.push(`${item} at $${Object.values(cart[i])}`);
 }
-console.log(`In your cart, you have ${bigCart.join(", ")} and ${Object.keys(cart[-1])} at $${Object.values(cart[-1])}.`)
 }
+console.log(`In your cart, you have ${bigCart.join(", ")} and ${Object.keys(cart[3])} at $${Object.values(cart[3])}.`)
 }
 }
 
