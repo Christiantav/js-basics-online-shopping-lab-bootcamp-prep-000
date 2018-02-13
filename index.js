@@ -28,7 +28,7 @@ else if(cart.length === 2){
   console.log(`In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])} and ${Object.keys(cart[1])} at $${Object.values(cart[1])}.`)
   return `In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])} and ${Object.keys(cart[1])} at $${Object.values(cart[1])}.`
 }
-else {
+else if(cart.length >= 3) {
   for (var i = 0; i < cart.length - 1; i++) {
     var bigCart = [];
     bigCart.push(` ${Object.keys(cart[i])} at $${Object.values(cart[i])}, `);
