@@ -52,18 +52,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var item = [];
-  if (item in cart) {
-  for (var i = 0; i < len; i++) {
+  for (var i = 0; i < cart.length; i++) {
       if (cart[i].hasOwnProperty(item)) {
-      conditionality = true
       cart.splice(i, 1)
-  }
+      return cart
 }
 }
-else {
-  console.log(`That item is not in your cart.`)
-}
+console.log(`That item is not in your cart.`)
 return cart
 }
 
