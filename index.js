@@ -53,12 +53,17 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var conditionality = false
   for (var i = 0, len = cart.length; i < len; i++) {
       if (cart[i].hasOwnProperty(item)) {
+      conditionality = true
       cart.splice(i, 1)
   }
-return cart
 }
+if (!conditionality) {
+  console.log(`That item is not in your cart.`)
+}
+return cart
 }
 
 function placeOrder(cardNumber) {
