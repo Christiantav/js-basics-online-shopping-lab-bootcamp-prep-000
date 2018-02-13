@@ -36,6 +36,7 @@ else if(cart.length >= 3) {
     return `In your cart, you have ${bigCart} and ${Object.keys(cart[-1])} at $${Object.values(cart[-1])}.`
 }
 }
+}
 
 function total() {
   var price = [];
