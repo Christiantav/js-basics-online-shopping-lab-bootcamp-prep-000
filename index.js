@@ -30,7 +30,7 @@ else if(cart.length >= 3) {
   var bigCart = [];
   for (var i = 0; i < cart.length - 1; i++) {
     for (var item in cart[i]) {
-      bigCart.push(`${item} at $${cart[i][item]}`);
+      bigCart.push(`${item} at $${Object.values(cart[i])}`);
 }
 }
 console.log(`In your cart, you have ${bigCart.join(", ")} and ${Object.keys(cart[3])} at $${Object.values(cart[3])}.`)
