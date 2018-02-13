@@ -33,7 +33,7 @@ else if(cart.length >= 3) {
       bigCart.push(`${item} at $${Object.values(cart[i])}`);
 }
 }
-console.log(`In your cart, you have ${bigCart.join(", ")}.`;
+console.log(`In your cart, you have ${bigCart.join(", ")}.`
 }
 
 
