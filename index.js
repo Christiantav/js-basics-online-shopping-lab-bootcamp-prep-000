@@ -32,7 +32,7 @@ else {
   for(var i = 0, len = cart.length; i < len - 1; i++) {
     bigCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}, `)
   }
-  console.log(`${intro} ${bigCart}and ${Object.keys(cart[-1])} at $${Object.values(cart[-1])} `)
+  console.log(`${intro} ${bigCart}and ${Object.keys(cart[-1])} at $${Object.values(cart[-1])}.`)
 }
 }
 
