@@ -28,12 +28,12 @@ else if(cart.length === 2){
 }
 else if(cart.length >= 3) {
   var bigCart = [];
-  for (var i = 0; i < cart.length - 1; i++) {
+  for (var i = 0; i < cart.length; i++) {
     for (var item in cart[i]) {
       bigCart.push(`${item} at $${Object.values(cart[i])}`);
 }
 }
-console.log(`In your cart, you have ${bigCart.join(", ")}and ${Object.keys(cart[2])} at $${Object.values(cart[2])}.`)
+console.log(`In your cart, you have ${bigCart.join(", ")} and ${Object.keys(cart[2])} at $${Object.values(cart[2])}.`)
 }
 }
 
