@@ -27,11 +27,12 @@ else if(cart.length === 2){
   console.log(`In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])} and ${Object.keys(cart[1])} at $${Object.values(cart[1])}.`)
 }
 else {
-  var intro = `In your cart, you have `;
+  var intro = `In your cart, you have`;
   var bigCart = [];
   for(var i = 0, len = cart.length; i < len - 1; i++) {
     bigCart.push(`${Object.keys(cart[i])} at $${Object.values(cart[i])}, `)
   }
+  console.log(`${intro} ${bigCart}and ${Object.keys(cart[-1])} at $${Object.values(cart[-1])} `)
 }
 }
 
