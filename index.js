@@ -16,22 +16,21 @@ return cart;
 }
 
 function viewCart() {
-var bigCart = [];
 if(cart.length === 0){
   console.log(`Your shopping cart is empty.`)
   return `Your shopping cart is empty.`;
 }
 else if(cart.length === 1){
   console.log(`In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])}.`)
-  return `In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])}.`
 }
 else if(cart.length === 2){
   console.log(`In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])} and ${Object.keys(cart[1])} at $${Object.values(cart[1])}.`)
-  return `In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])} and ${Object.keys(cart[1])} at $${Object.values(cart[1])}.`
 }
 else if(cart.length >= 3) {
-  for (var i = 0; i < cart.length - 1; i++) {
-    bigCart.push(` ${Object.keys(cart[i])} at $${Object.values(cart[i])}, `);
+  var bigCart = []
+  for (var i = 0; i < cart.length; i++) {
+    for (var item in cart[i]) {
+      bigCart.push(`${item} at $${Object.values(cart[i])}`)
     console.log(`In your cart, you have ${bigCart} and ${Object.keys(cart[-1])} at $${Object.values(cart[-1])}.`);
 }
 }
