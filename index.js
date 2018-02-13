@@ -27,13 +27,13 @@ else if(cart.length === 2){
   console.log(`In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])} and ${Object.keys(cart[1])} at $${Object.values(cart[1])}.`)
 }
 else if(cart.length >= 3) {
-  var bigCart = []
+  var bigCart = [];
   for (var i = 0; i < cart.length; i++) {
     for (var item in cart[i]) {
-      bigCart.push(`${item} at $${Object.values(cart[i])}`)
+      bigCart.push(`${item} at $${Object.values(cart[i])}`);
 }
 }
-console.log(`In your cart, you have ${items.join(", ")}.`
+console.log(`In your cart, you have ${items.join(", ")}.`;
 }
 }
 
